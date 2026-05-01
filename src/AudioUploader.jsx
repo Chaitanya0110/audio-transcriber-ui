@@ -30,7 +30,7 @@ const AudioUploader = () => {
 
         try {
             const response = await axios.post(
-                `${process.env.API_URL}/api/transcribe`,
+                `${import.meta.env.VITE_API_URL}/api/transcribe`,
                 formData
             );
             
